@@ -1,0 +1,74 @@
+background(19, 102, 26);
+fill(16, 0, 247);
+textSize(30);
+text("ეს არი დავითის რეკლამა", 18, 50);
+textSize(12.5);
+text("დავითი საკმაოდ კარგი ბიჭია და მას შენთვის სიურპრიზი აქვს", 0,89);
+fill(255, 3, 3);
+text("დააჭირე ერთხელ ნებისმიერ ადგილას!!!!!!" ,60,172); 
+var gulisZoma = 100;
+var textSizee = 13;
+var gulisY = 200;
+var gulisX = 24;
+var roketY = 178;
+var roketX = 0;
+var starX = 20;
+var starY = 60;
+var starXright = 20;
+var starXcenter = 20;
+
+mouseMoved = function(){
+    background(12, 25, 79);
+    fill(213, 255, 0);
+    textSize(30);
+    textFont("fantasy", 30);
+    text("L I Z I",158,123);
+    textSize(textSizee);
+    text("everything this is for you <3", 120, 140);
+    text("კოსმოსიც შენთვის მიჩუქნია <333",100,160);
+    noStroke();
+    image(getImage("space/octopus"),roketX,roketY,gulisZoma,gulisZoma);
+    image(getImage("space/healthheart"),gulisX,gulisY,gulisZoma ,gulisZoma );
+     gulisX = gulisX + 1;
+     roketX = roketX + 1;
+    
+    
+    //stars
+    image(getImage("space/star"),starX,starY,30,30);
+    image(getImage("space/star"),starX+20,starY-9,30,30);
+    image(getImage("space/star"),starX+20*2,starY-9*2,30,30);
+   image(getImage("space/star"),starX+20*3,starY-9*3,30,30);
+   image(getImage("space/star"),starX+20*4,starY-9*4,30,30);
+   image(getImage("space/star"),starX+20*5,starY-9*5,30,30);
+   image(getImage("space/star"),starXcenter+20*6,starY-9*6,30,30);
+   image(getImage("space/star"),starXcenter+20*7,starY-9*6,30,30);
+   image(getImage("space/star"),starXcenter+20*8,starY-9*6,30,30);
+   image(getImage("space/star"),starXcenter+20*9,starY-9*6,30,30);
+   image(getImage("space/star"),starXcenter+20*10,starY-9*6,30,30);
+   image(getImage("space/star"),starXcenter+20*11,starY-9*6,30,30);
+   image(getImage("space/star"),starXright+20*12,starY-9*5,30,30);
+   image(getImage("space/star"),starXright+20*13,starY-9*4,30,30);
+   image(getImage("space/star"),starXright+20*14,starY-9*3,30,30);
+   image(getImage("space/star"),starXright+20*15,starY-9*2,30,30);
+   image(getImage("space/star"),starXright+20*16,starY-9*1,30,30);
+   image(getImage("space/star"),starXright+20*17,starY,30,30);
+   
+   starY = starY +2;
+   starX = starX + 1;
+   starXright = starXright - 1;
+   
+   
+    
+}; 
+
+
+
+
+
+
+
+
+
+
+
+
